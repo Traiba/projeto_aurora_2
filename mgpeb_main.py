@@ -1,3 +1,5 @@
+from collections import deque
+
 prioridades = {
     "Extrema": 5,
     "Alta": 4,
@@ -27,3 +29,11 @@ def buscar_por_caracteristica(criterio, valor=None):
     
     return None
 
+def reorganizar_fila_pouso(criterio, decrescente=True):
+    
+    global fila_pouso
+    
+    ordenados = sorted(list(fila_pouso), key=lambda x: x[criterio], reverse=decrescente)
+        
+    fila_pouso = deque(ordenados)
+    print(f"Fila reorganizada por: {criterio}")
