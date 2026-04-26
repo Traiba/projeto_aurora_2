@@ -62,4 +62,25 @@ def avaliar_autorizacao_pouso(modulo, vento_kmh, visibilidade_km):
     
     else:
         return f"AUTORIZADO: {modulo['nome']} pronto para descida."
+
+
+fila_pouso = deque(modulos_missao)
+
+print("--- MGPEB: Início da Sequência de Pouso ---")
+
+reorganizar_fila_pouso("criticidade", decrescente=True)
+
+vento_atual = 15.0
+visibilidade_atual = 12.0
+
+while fila_pouso:
     
+    modulo_atual = fila_pouso.popleft()
+
+    resultado = avaliar_autorizacao_pouso(modulo_atual, vento_atual, visibilidade_atual)
+    
+    print(f"\nVerificando {modulo_atual['nome']}:")
+    print(f"Status do MGPEB: {resultado}")
+
+print("\n--- Fila de pouso processada com sucesso ---")
+
