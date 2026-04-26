@@ -24,5 +24,5 @@ O MGPEB simula a tomada de decisão autônoma em tempo real, necessária devido 
 1. Certifique-se de ter o Python instalado.
 2. Clone este repositório:
    ```bash
-   git clone [https://github.com/seu-usuario/mgpeb-aurora-siger.git](https://github.com/seu-usuario/mgpeb-aurora-siger.git)
+   git clone https://github.com/Traiba/projeto_aurora_2.git
 3. Rode utilizando `python3 mgpeb_main.py`
