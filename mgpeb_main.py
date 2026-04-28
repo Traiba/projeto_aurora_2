@@ -9,14 +9,6 @@ prioridades = {
 }
 
 modulos_missao = [
-    {"id": "MOD-01", "nome": "Suporte Médico", "massa": 14200, "criticidade": prioridades["Extrema"], "combustivel": 70},
-    {"id": "MOD-02", "nome": "Geração de Energia", "massa": 9800, "criticidade": prioridades["Alta"], "combustivel": 78},
-    {"id": "MOD-03", "nome": "Habitação Principal", "massa": 18500, "criticidade": prioridades["Média-Alta"], "combustivel": 55},
-    {"id": "MOD-04", "nome": "Laboratório Científico", "massa": 11300, "criticidade": prioridades["Média"], "combustivel": 75},
-    {"id": "MOD-05", "nome": "Logística e Suprimentos", "massa": 22700, "criticidade": prioridades["Baixa"], "combustivel": 38}
-]
-
-modulos_missao = [
     {"id": "MOD-01", "nome": "Suporte Médico", "massa": 14200, "criticidade": prioridades["Extrema"], "combustivel": 70, "status": "OK"},
     {"id": "MOD-02", "nome": "Geração de Energia", "massa": 9800, "criticidade": prioridades["Alta"], "combustivel": 78, "status": "OK"},
     {"id": "MOD-03", "nome": "Habitação Principal", "massa": 18500, "criticidade": prioridades["Média-Alta"], "combustivel": 55, "status": "OK"},
